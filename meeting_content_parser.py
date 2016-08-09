@@ -10,7 +10,7 @@ class MeetingContentParser(base_parser.BaseParser):
         for mtg in self.soup.findAll('meeting'):
             meetingid = mtg.findParent('meetingid')
             items = meetingid.find('agendaitems').text
-        return all_data
+            all_data.append(meetingid)
         print all_data
 
 
