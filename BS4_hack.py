@@ -31,15 +31,15 @@ soup = BeautifulSoup(html_doc, 'html5lib') # this one works fine with examples s
 
 # extract something from the soup by tag
 #print(soup.p)
-print(soup.title)
+#print(soup.title)
 # print(soup.title.string)
 # print(soup.a)
-items = soup.find_all('title')
+items = soup.find_all('minutesnonemptyhtmlbody')
 for item in items:
     print (item.contents)
-# print(soup.find_all('p'))
-# print(soup.head)
-# print(soup.body)
+    #print(soup.find_all('p'))
+    #print(soup.head)
+    #print(soup.body)
 
 #list all the div types
 #print('HERE ARE ALL THE DIV TYPES:')
